@@ -1,7 +1,7 @@
 # XAMPP
 ![image](https://user-images.githubusercontent.com/73011056/211057312-418f469c-ba7e-4308-8044-a6bda9772060.png)
 
-# C:\xampp\htdocs\ECT24
+# Run HTML/PHP to C:\xampp\htdocs\ECT24
 
 # http://localhost/ect24/login.html
 ![image](https://user-images.githubusercontent.com/73011056/211058852-69d410ed-2964-4d9b-bb03-88cd173a19ea.png)
