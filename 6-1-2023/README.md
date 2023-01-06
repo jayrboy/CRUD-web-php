@@ -2,6 +2,7 @@
 ![image](https://user-images.githubusercontent.com/73011056/211057312-418f469c-ba7e-4308-8044-a6bda9772060.png)
 
 # Run HTML/PHP to C:\xampp\htdocs\ECT24
+![image](https://user-images.githubusercontent.com/73011056/211060128-f37d86d8-c17f-4f2c-a67d-170fcc312eaa.png)
 
 # localhost/ect24/login.html
 ![image](https://user-images.githubusercontent.com/73011056/211058852-69d410ed-2964-4d9b-bb03-88cd173a19ea.png)
