@@ -8,5 +8,5 @@
  - PHP
  - Database (MySQL/MariaDB) + SQL
  - XML, JSON ,AJAX
-จุดประสงค์
+- จุดประสงค์
  - สร้าง Web board ง่ายๆ ถึงปานกลางได้
