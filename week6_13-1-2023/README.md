@@ -6,9 +6,25 @@
     }
     ?>
     </ul>
-![image](https://user-images.githubusercontent.com/73011056/212308500-b0a799d1-45e2-4b38-af11-eb48a9c4d311.png)
+![image](https://user-images.githubusercontent.com/73011056/212308895-b5b441ee-c8ae-4d98-8782-1c7976b27f1f.png)
 
-#
+# vierify.php
+    <?php 
+        $login = $_POST['login'];
+        $passwd = $_POST['passwd'];
+
+        if ($login == "admin" && $passwd == "ad1234"){
+            echo "ยินดีต้อนรับคุณ ADMIN <br>";
+        }
+        elseif ($login == "member" && $passwd == "mem1234") {
+            echo "ยินดีต้อนรับคุณ MEMBER <br>";
+        }
+        else {
+            echo "ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง <br>";
+        }
+    ?>
+![image](https://user-images.githubusercontent.com/73011056/212313455-201782f8-ed60-4414-ad2b-cc4041e5971c.png)
+
 #
 #
 #
