@@ -25,6 +25,13 @@
     ?>
 ![image](https://user-images.githubusercontent.com/73011056/212313455-201782f8-ed60-4414-ad2b-cc4041e5971c.png)
 
-#
-#
-#
+# post.php
+    <?php
+    if ($id = $_GET['id'] % 2)
+        echo "เป็นกระทู้หมายเลขคี่";
+    else
+        echo "เป็นกระทู้หมายเลขคู่";
+    ?>
+![image](https://user-images.githubusercontent.com/73011056/212313983-a3fbd954-be4c-4f14-a177-23b6e78aa6a1.png)
+
+
