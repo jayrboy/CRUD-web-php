@@ -1,70 +1,29 @@
 # verify.php
+![image](https://user-images.githubusercontent.com/73011056/213868918-5a48abc5-119c-4e66-a507-92d32b9901e8.png)
+
+# index.php
+![image](https://user-images.githubusercontent.com/73011056/213868936-9d8e0848-9ede-4de5-a466-6baea5499762.png)
+
+# logout.php
       <?php
-        $login = $_POST['username'];
-        $passwd = $_POST['passwd'];
-        if ($login == "admin" && $passwd == "ad1234") {
-            $_SESSION['username'] = "admin";
-            $_SESSION['role'] = "a";
-            $_SESSION['id'] = session_id();
-            echo "ยินดีต้อนรับคุณ ADMIN <br>";
-        } elseif ($login == "member" && $passwd == "mem1234") {
-            $_SESSION['username'] = "member";
-            $_SESSION['role'] = "m";
-            $_SESSION['id'] = session_id();
-            echo "ยินดีต้อนรับคุณ MEMBER <br>";
+        session_start();
+        session_destroy();
+        header("location: login.php")
+      ?>
+
+# delete.php
+![image](https://user-images.githubusercontent.com/73011056/213868989-6fa13715-3816-42c1-b55b-a9414b0d90c7.png)
+
+      <?php
+        session_start();
+        if ($_SESSION['role'] != 'a') {
+            header("location: index.php");
+            die();
         } else {
-            echo "ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง <br>";
+            echo "Delete 'กระทู้ที่ $_GET[id]'";
         }
       ?>
-# index.php
-      <?php if (!isset($_SESSION['id'])) { ?>
-    <!--Login Success-->
-    <body style="text-align: left">
-        <h1 style="text-align: center;" class="second">PHP WEB BOARD</h1>
-        <hr> หมวดหมู่ :
-        <select name="" id="">
-            <option value="-- ทั้งหมด --">-- ทั้งหมด --</option>
-            <option value="general">เรื่องทั่วไป</option>
-            <option value="learn">เรื่องเรียน</option>
-        </select>
-        <a href="login.php" style="float:right" class="btn">LOGIN</a>
-        <ul>
-            <?php
-            for ($i = 1; $i <= 10; $i++) {
-                echo "<li><a href=post.php?id=$i>กระทู้ที่ $i</a></li>";
-            }
-            ?>
-        </ul>
-    </body>
-      <?php } else { ?>
-          <!--Login Success-->
-          <body style="text-align: left">
-              <h1 style="text-align: center;" class="second">PHP WEB BOARD</h1>
-              <hr> หมวดหมู่ :
-              <select name="" id="">
-                  <option value="-- ทั้งหมด --">-- ทั้งหมด --</option>
-                  <option value="general">เรื่องทั่วไป</option>
-                  <option value="learn">เรื่องเรียน</option>
-              </select>
-              <div style="float:right;">
-                  <?php
-                  echo "ผู้ใช้: $_SESSION[username]&nbsp;&nbsp;";
-                  ?>
-                  <a href="logout.php" style="float:right" onclick="return confirm('คุณต้องการออกจากระบบหรือไม่ ?')">LOGOUT</a>
-              </div>
-              <br><br>
-              <a href="newpost.php">Create New</a>
 
-              <ul style="list-style-type : disc;">
-                  <?php
-                  for ($i = 1; $i <= 10; $i++) {
-                      echo "<li><a href=post.php?id=$i>กระทู้ที่ $i</a>";
-                      if ($_SESSION['role'] == 'a') {
-                          echo "&nbsp;&nbsp;<a href=delete.php?id=$i>Delete</a>";
-                      }
-                      echo "</li>";
-                  }
-                  ?>
-              </ul>
-          </body>
-      <?php } ?>
+# newpost.php
+
+   
