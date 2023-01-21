@@ -29,5 +29,7 @@
       ?>
 
 # newpost.php
+![image](https://user-images.githubusercontent.com/73011056/213870739-ef6a9620-4394-4c6f-a7b1-985c7bda5570.png)
+
 
    
