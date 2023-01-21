@@ -3,6 +3,8 @@
 
 # index.php
 ![image](https://user-images.githubusercontent.com/73011056/213868936-9d8e0848-9ede-4de5-a466-6baea5499762.png)
+![image](https://user-images.githubusercontent.com/73011056/213869133-ac499360-5861-4f61-ba5a-29b2d992c8a4.png)
+
 
 # logout.php
       <?php
