@@ -1,0 +1,60 @@
+        h1 {
+            color: #fff;
+            background-color: orangered;
+            width: auto;
+            border: 2px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            text-shadow: red -2px 0, cyan 2px 0;
+        }
+        
+        table {
+            border: 2px solid black;
+            width: auto;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        td {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px
+        }
+        
+        .second {
+            border: solid 2px #4d4e50;
+            text-align: center;
+            background-color: orangered;
+            width: auto;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        button {
+            color: #fff;
+            background-color: royalblue;
+            border-radius: 10px;
+            border: solid 2px black;
+            text-decoration: none;
+        }
+        
+        a.btn {
+            color: #fff;
+            background-color: royalblue;
+            border: solid 2px black;
+            text-decoration: none;
+            width: 50px;
+            height: auto;
+            text-align: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        body {
+            background-color: #e0e0eb;
+        }

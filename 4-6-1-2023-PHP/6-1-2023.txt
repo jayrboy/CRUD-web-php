@@ -1,0 +1,7 @@
+Web Application	----------------STEP RUN  HTML On XAMPP for PHP------------------
+
+VSCode > edit > run XAMPP > open Browser > https://localhost/(file_project)/(.html or .php) > debug
+																 https://127.0.0.1/(file_project)/(.html
+
+Prrogram
+	XAMPP > htdocs > create_directory 
